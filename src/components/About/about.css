@@ -1,0 +1,104 @@
+.aboutBody {
+    background: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+#about {
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutLine1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.aboutLine2 {
+    font-size: 4.5rem;
+    color: rgb(129, 80, 80);
+}
+
+.aboutBoxes {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.internship {
+    margin: 1rem;
+    padding: 4rem 5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(240, 240, 240);
+    position: relative; /* This ensures that the confetti renders inside this div */
+    overflow: hidden;   /* This will hide confetti that goes outside the div boundaries */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* This line ensures a smooth transition */
+}
+
+.internship:hover {
+    transform: scale(1.1); /* This will slightly enlarge the div on hover */
+  }
+
+.education {
+    margin: 1rem;
+    padding: 4rem 5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(240, 240, 240);
+    position: relative; /* This ensures that the confetti renders inside this div */
+    overflow: hidden;   /* This will hide confetti that goes outside the div boundaries */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* This line ensures a smooth transition */
+}
+
+.education:hover {
+    transform: scale(1.1); /* This will slightly enlarge the div on hover */
+  }
+
+.aboutLogos {
+    object-fit: cover;
+    height: 5rem;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 65rem;
+    padding: 0rem 2rem;
+}
+
+.descriptionText {
+    font-size: 1.5rem;
+    font-weight: 1;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

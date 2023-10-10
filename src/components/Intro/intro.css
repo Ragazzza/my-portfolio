@@ -1,0 +1,61 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.myName {
+    font-size: 4.5rem;
+    color: rgb(129, 80, 80);
+}
+
+.position {
+    font-size: 2rem;
+    font-weight: 150;
+}
+
+@media screen and (max-width:840px) {s
+    *{
+       margin: 0 auto;
+    }
+    #intro {
+        width: max-content;
+    }
+    .bg {
+        right: -10vw;
+    }
+    .hello {
+        font-weight: 200;
+    }
+    .position {
+        font-weight: 200;
+    }
+}

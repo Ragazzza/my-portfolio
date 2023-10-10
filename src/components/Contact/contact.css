@@ -1,0 +1,133 @@
+.contactBody {
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+}
+
+#contact {
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLine1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.contactLine2 {
+    font-size: 4.5rem;
+    color: rgb(129, 80, 80);
+}
+
+.contactForm {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: large;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(230, 230, 230);
+}
+
+.submitBtn {
+    background: rgb(129, 80, 80);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linksImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
+.custom-alert {
+    position: fixed;  
+    top: 50%;         
+    left: 50%;        
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background: rgb(230, 230, 230);
+    color: rgb(129, 80, 80);
+    font-size: large;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 1000;     
+}
+
+.alert-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(2px);  
+    z-index: 999;  
+}
+
+.close-alert {
+    position: absolute;
+    top: 5px; 
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+}
+
+.close-alert:hover {
+    color: rgb(129, 80, 80);
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
